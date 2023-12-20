@@ -1,0 +1,11 @@
+.projectC{
+    /* width: 600px; */
+    height: 400px;
+    /* display: flex; */
+    overflow: scroll;
+    background-color: aliceblue;
+}
+.projectHeading{
+    font-size: 18px;
+    color: blue;
+}

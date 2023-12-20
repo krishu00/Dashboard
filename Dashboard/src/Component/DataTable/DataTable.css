@@ -1,0 +1,77 @@
+
+.exceldata{
+    text-align: center;
+    margin-top: 10px;
+    /* border-bottom: 2px double black; */
+  }
+  .searchBox , .btnSearch , .reset{
+    /* text-align: left; */
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .table-container{
+      width: 80vw;
+      height: 75vh;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+    
+    /* .excel-data-container {
+      background-color: #6c5d5da7; 
+      color: white; /* Text color */
+      /* padding: 20px;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    } */ 
+    
+    
+    .excel-data-table {
+      width: 100%;
+      border-collapse: collapse;
+    
+      /* table-layout: fixed; */
+    }
+    
+    .excel-data-table th,
+    .excel-data-table td {
+      padding: 4px;
+      text-align: left;
+      border: 1px solid white;
+    
+      white-space: wrap; 
+      overflow: hidden;    
+      text-overflow: ellipsis; 
+    }
+    
+    .excel-data-table th {
+      background-color: #555555d3;
+      color: #fff; /* Darker background color for headers */
+      position: sticky;
+      top: 0;
+    }
+    
+    .excel-data-table tr:nth-child(even) {
+      background-color: #a5a3a363; /* Alternate row background color */
+    }
+    
+    .excel-data-table tr:hover {
+      background-color: #443f3f94; /* Highlight color on hover */
+    }
+    /* Style for the search input */
+    input[type="text"] {
+      padding: 5px;
+      margin: 5px 10px;
+      width: 25%;
+      box-sizing: border-box;
+    }
+    .btnSearch , .reset{
+      border: none;
+      background-color: #4444443b;
+      padding: 5px;
+      margin-right: 10px;
+    }
