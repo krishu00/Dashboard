@@ -71,15 +71,15 @@ const Home = (props) => {
       <div className="lowerContainer">
         <div className="projectCost">
           {/* <DataTable /> */}
-          {/* <ProjectCosting/> */}
+      
           <GoogleProjectCost/>
-          {/* <newDataTable/> */}
+      
         </div>
       
         <div className="itemList">
           <ItemList>
             <button  className="buttonStyle"  onClick={() => setIsModalOpen(true)}>Display Table!</button>
-          </ItemList>
+          </ItemList> 
           {/* <Modal isOpen={false}></Modal> */}
           <MyModal openModal={ismodalOpen} close={setIsModalOpen}>
             

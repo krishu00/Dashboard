@@ -52,14 +52,14 @@ function ItemPieChart({ children }) {
   return (
     <div className="itemContainer">
       <h1 className="ItemList">Items Lists </h1>
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height={250} top={100}>
         <PieChart>
 
           <Pie
             data={numericDummyData  } 
             cx="40%"
             cy="50%"
-            innerRadius={50}
+            innerRadius={60}
             outerRadius={90}
             fill="#8884d8"
             dataKey="value"  

@@ -29,3 +29,12 @@ button:hover{
     background-color: rgba(132, 120, 120, 0.819) ;
     color: black;
 }
+@media only screen and (max-width: 768px) {
+    button{
+        margin-left: 104px;
+        margin-top: 40px;
+    }
+}
+@meia only screen and (max-width: 576px) {
+
+  }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell, LabelList } from 'recharts';
 import * as XLSX from "xlsx";
-
+// import "../MonthlySales/MonthlySales.css"
 let count_number=0,count_number1=0;
 let data_new = [
   {
@@ -165,11 +165,14 @@ console.log(Monthly_Sale_rs);
   };
 
   return (
-    <ResponsiveContainer width='130%' height={220}>
+
+    <div className="monthlySales">
+
+    <ResponsiveContainer width='100%' height={220}>
       <BarChart
         data={data_new}
-        margin={{ top: 25, right: 30, left: 20, bottom: 5 }}
-      >
+        margin={{ top: 25, right: 20, left: 10, bottom: 5 }}
+        >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey='name' />
         <YAxis />
@@ -182,12 +185,13 @@ console.log(Monthly_Sale_rs);
           ))}
           <LabelList 
            position="top"
-           formatter={(value) => `${value}Lac.`}
+           formatter={(value) => `${value}L.`}
            />
 
         </Bar>
       </BarChart>
     </ResponsiveContainer>
+           </div>
   );
 };
 

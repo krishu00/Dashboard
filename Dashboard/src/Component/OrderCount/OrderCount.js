@@ -71,6 +71,7 @@ const OrderCount = (props) => {
 
   return (
     <>
+    <div className="container"> 
       <div className="box box1">
         <h1 className="title title1">Total Order:</h1>
         <h1 className="value value1">{totalOrder}</h1>
@@ -88,6 +89,7 @@ const OrderCount = (props) => {
         {/* <h1 className="value ">{approxData}</h1> */}
         <h1 className="value  value4 approxValue">{`${approxData} Lac.`}</h1>
       </div>
+    </div>
     </>
   );
 };
